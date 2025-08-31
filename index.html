@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/output.css" />
+    <title>Ana Excursões</title>
+    <style>
+      .apresentacao {
+        background-image: linear-gradient(to top, rgb(0, 0, 0, 1), rgba(0, 0, 0, 0.7)), url("./assets/blumenau.jpg");
+      }
+
+      .praia {
+        background-image: url("./assets/praia6.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <header class="">
+      <nav class="bg-purple-600 p-4 flex flex-row gap-2">
+        <i class="fa-solid fa-location-dot text-pink-300 text-xl"></i>
+        <h1 class="text-white text-xl">Ana Excursões</h1>
+      </nav>
+    </header>
+    <main>
+      <section class="w-full h-[550px] bg-center bg-cover apresentacao">
+        <div class="flex justify-center items-center flex-col h-full">
+          <h1 class="text-6xl text-center text-white mt-5">Destino certo, conforto garantido!</h1>
+          <button class=" p-4 rounded-3xl bg-purple-600 hover:bg-purple-500 text-white mt-8 w-64 text-xl">Destinos</button>
+        </div>
+      </section>
+      <section class="w-full praia py-32 bg-no-repeat bg-cover">
+        <main class="grid grid-cols-3">
+          <article class="bg-white shadow-lg flex py-10 gap-11 border items-center justify-center">
+            <div class="bg-gray-200 w-fit rounded-lg flex items-center p-3">
+              <i class="fa-solid fa-location-dot text-purple-600 text-8xl"></i>
+            </div>
+            <div class="flex flex-col justify-around h-full">
+              <h1 class="text-purple-700 text-6xl font-bold border-b-2">+999</h1>
+              <h2 class="text-2xl text-purple-600 text-end font-semibold">Destinos feitos</h2>
+            </div>
+          </article>
+          <article class="bg-white shadow-lg flex px-5 py-10 gap-11 border items-center justify-center">
+            <div class="bg-gray-200 w-fit rounded-lg flex items-center p-3">
+              <i class="fa-solid fa-bus-simple text-purple-600 text-8xl"></i>
+            </div>
+            <div class="flex flex-col justify-around h-full">
+              <h1 class="text-purple-700 text-6xl font-bold border-b-2">+567</h1>
+              <h2 class="text-2xl text-purple-600 text-end font-semibold">Viagens feitas</h2>
+            </div>
+          </article>
+          <article class="bg-white shadow-lg flex px-5 py-10 gap-11 border items-center justify-center">
+            <div class="bg-gray-200 w-fit rounded-lg flex items-center p-3">
+              <i class="fa-solid fa-user text-purple-600 text-8xl"></i>
+            </div>
+            <div class="flex flex-col justify-around h-full">
+              <h1 class="text-purple-700 text-6xl font-bold border-b-2">+5.000</h1>
+              <h2 class="text-2xl text-purple-600 text-end font-semibold">Clientes satisfeitos</h2>
+            </div>
+          </article>
+        </main>
+      </section>
+      <section class="bg-purple-100 pb-12">
+        <header class="flex justify-center items-center py-12 gap-5">
+          <i class="fa-solid fa-location-dot text-6xl text-purple-600"></i>
+          <h1 class="text-center text-5xl text-purple-600 font-semibold p-4">
+            Destinos
+          </h1>
+        </header>
+        <main class="grid grid-cols-3 gap-x-8 gap-y-8 items-center px-20">
+          <article class="w-full bg-white rounded-lg shadow-lg">
+            <div class="bg-[url(/assets/blumenau.jpg)] w-full h-72 bg-cover bg-no-repeat"></div>
+            <div class="p-2 flex gap-2 flex-col">
+              <div class="flex flex-row items-center gap-2">
+                <i class="fa-solid fa-location-dot text-purple-400 text-lg"></i>
+                <h1 class="text-gray-700 text-base flex items-center gap-4">Vila Germânica</h1>
+              </div>
+              <div class="flex flex-row items-center gap-2 ml-1"> 
+                <i class="fa-solid fa-calendar-days text-purple-400 text-sm"></i>
+                <h1 class="text-gray-700 text-sm flex items-center">03/09/2025 - 10/09/2025</h1>
+              </div>
+              <div>
+                <button class="bg-purple-600 w-full text-white p-4 flex items-center justify-center gap-4 rounded-lg">
+                  <i class="fa-solid fa-plus"></i>Detalhes
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="w-full bg-white rounded-lg shadow-lg">
+            <div class="bg-[url(/assets/gramado.jpg)] w-full h-72 bg-cover bg-no-repeat"></div>
+            <div class="p-2 flex gap-2 flex-col">
+              <div class="flex flex-row items-center gap-2">
+                <i class="fa-solid fa-location-dot text-purple-400 text-lg"></i>
+                <h1 class="text-gray-700 text-base flex items-center gap-4">Gramado</h1>
+              </div>
+              <div class="flex flex-row items-center gap-2 ml-1"> 
+                <i class="fa-solid fa-calendar-days text-purple-400 text-sm"></i>
+                <h1 class="text-gray-700 text-sm flex items-center">03/09/2025 - 10/09/2025</h1>
+              </div>
+              <div>
+                <button class="bg-purple-600 w-full text-white p-4 flex items-center justify-center gap-4 rounded-lg">
+                  <i class="fa-solid fa-plus"></i>Detalhes
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="w-full bg-white rounded-lg  shadow-lg">
+            <div class="bg-[url(/assets/betocarrero.jfif)] w-full h-72 bg-cover bg-no-repeat"></div>
+            <div class="p-2 flex gap-2 flex-col">
+              <div class="flex flex-row items-center gap-2">
+                <i class="fa-solid fa-location-dot text-purple-400 text-lg"></i>
+                <h1 class="text-gray-700 text-base flex items-center gap-4">Beto Carrero</h1>
+              </div>
+              <div class="flex flex-row items-center gap-2 ml-1"> 
+                <i class="fa-solid fa-calendar-days text-purple-400 text-sm"></i>
+                <h1 class="text-gray-700 text-sm flex items-center">03/09/2025 - 10/09/2025</h1>
+              </div>
+              <div>
+                <button class="bg-purple-600 w-full text-white p-4 flex items-center justify-center gap-4 rounded-lg">
+                  <i class="fa-solid fa-plus"></i>Detalhes
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="w-full bg-white rounded-lg  shadow-lg">
+            <div class="bg-[url(/assets/betocarrero.jfif)] w-full h-72 bg-cover bg-no-repeat"></div>
+            <div class="p-2 flex gap-2 flex-col">
+              <div class="flex flex-row items-center gap-2">
+                <i class="fa-solid fa-location-dot text-purple-400 text-lg"></i>
+                <h1 class="text-gray-700 text-base flex items-center gap-4">Beto Carrero</h1>
+              </div>
+              <div class="flex flex-row items-center gap-2 ml-1"> 
+                <i class="fa-solid fa-calendar-days text-purple-400 text-sm"></i>
+                <h1 class="text-gray-700 text-sm flex items-center">03/09/2025 - 10/09/2025</h1>
+              </div>
+              <div>
+                <button class="bg-purple-600 w-full text-white p-4 flex items-center justify-center gap-4 rounded-lg">
+                  <i class="fa-solid fa-plus"></i>Detalhes
+                </button>
+              </div>
+            </div>
+          </article>
+        </main>
+      </section>
+      <section class="bg-purple-600 w-full h-screen">
+        <header class="flex items-center justify-center gap-14">
+          <i class="fa-solid fa-face-smile text-white text-5xl"></i>
+          <h1 class="text-center text-5xl text-white font-semibold py-16">
+            Nossas avaliações
+          </h1>
+        </header>
+        <main class="grid grid-cols-3 justify-items-center">
+          <article class="p-4 max-w-96 bg-white rounded-3xl flex flex-col text-center justify-center items-center">
+            <img src="./assets/JoaoVictor.jpg" class="rounded-full size-24" />
+            <h1 class="text-gray-500 text-3xl my-3">João Victor</h1>
+            <div class="text-yellow-400 text-2xl">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h2 class="text-2xl text-gray-500 mt-2"> - 5/5 - </h2>
+            <p class="text-gray-500 text-justify mt-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+            </p>
+          </article>
+          <article class="p-4 max-w-96 bg-white rounded-3xl flex flex-col text-center justify-center items-center">
+            <img src="./assets/JoaoVictor.jpg" class="rounded-full size-24" />
+            <h1 class="text-gray-500 text-3xl my-3">João Victor</h1>
+            <div class="text-yellow-400 text-2xl">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h2 class="text-2xl text-gray-500 mt-2"> - 5/5 - </h2>
+            <p class="text-gray-500 text-justify mt-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+            </p>
+          </article>
+          <article class="p-4 max-w-96 bg-white rounded-3xl flex flex-col text-center justify-center items-center">
+            <img src="./assets/JoaoVictor.jpg" class="rounded-full size-24" />
+            <h1 class="text-gray-500 text-3xl my-3">João Victor</h1>
+            <div class="text-2xl">
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <i class="fa-solid fa-star text-gray-300"></i>
+              <i class="fa-solid fa-star text-gray-300"></i>
+            </div>
+            <h2 class="text-2xl text-gray-500 mt-2"> - 3/5 - </h2>
+            <p class="text-gray-500 text-justify mt-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+            </p>
+          </article>
+        </main>
+
+      </section>
+    </main>
+  </body>
+</html>
