@@ -20,7 +20,7 @@
         height: 200px;
         right: 140px;
         top: 40px;
-        z-index: 2;
+        z-index: 62;
       }
 
       .segunda-foto-position {
@@ -28,7 +28,7 @@
         height: 210px;
         bottom: 50px;
         left: 100px;
-        z-index: 1;
+        z-index: 61;
       }
 
       .terceira-foto-position {
@@ -36,7 +36,7 @@
         height: 250px;
         top: 20px;
         left: 20px;
-        z-index: 3;
+        z-index: 63;
       }
 
       .beto-carrero-position {
@@ -44,10 +44,7 @@
         height: 210px;
         bottom: 50px;
         right: 90px;
-      }
-
-      .filho {
-        top: 130px;
+        z-index: 64;
       }
     </style>
   </head>
@@ -59,49 +56,54 @@
       </nav>
     </header>
     <main>
-      <section class="w-full h-[550px] flex bg-[url('/assets/praia.jpg')] bg-center bg-cover bg-no-repeat">
-        <div class="w-full flex">
-          <div class="w-full h-full relative apresentacao-container-position">
-            <div class="bg-[url('/assets/1.jpg')] bg-no-repeat bg-center bg-cover rounded-full absolute primeira-foto-position border-4 border-purple-100"></div>
-            <div class="bg-[url('/assets/2.jpg')] bg-no-repeat bg-center bg-cover rounded-full absolute segunda-foto-position border-4 border-purple-100"></div>
-            <div class="bg-[url('/assets/3.jpg')] bg-no-repeat bg-center bg-cover rounded-full absolute terceira-foto-position border-4 border-purple-100"></div>
-            <div class="bg-[url('/assets/betocarrero.jfif')] bg-no-repeat bg-center bg-cover rounded-full absolute beto-carrero-position border-4 border-purple-100"></div>
+      <div class="z-50 w-[720px] h-[610px] blur-3xl bg-white absolute top-15 bg-opacity-85"></div>
+      <section class="w-full h-full praia">
+        <section class="w-full h-[550px] flex bg-center bg-cover bg-no-repeat">
+          <div class="w-full flex">
+            <div class="w-full h-full relative apresentacao-container-position">
+              <div class="bg-[url('/assets/1.jpg')] bg-no-repeat bg-center bg-cover rounded-full absolute primeira-foto-position border-4 border-purple-100"></div>
+              <div class="bg-[url('/assets/2.jpg')] bg-no-repeat bg-center bg-cover rounded-full absolute segunda-foto-position border-4 border-purple-100"></div>
+              <div class="bg-[url('/assets/3.jpg')] bg-no-repeat bg-center bg-cover rounded-full absolute terceira-foto-position border-4 border-purple-100"></div>
+              <div class="bg-[url('/assets/betocarrero.jfif')] bg-no-repeat bg-center bg-cover rounded-full absolute beto-carrero-position border-4 border-purple-100"></div>
+            </div>
           </div>
-        </div>
-        <div class="w-full">
-          <h1>Boas viagens!</h1>
-        </div>
-      </section>
-      <section class="w-full praia py-32 bg-no-repeat bg-cover">
-        <main class="grid grid-cols-3 px-10 rounded-lg">
-          <article class="bg-white rounded-l-lg shadow-lg flex py-10 gap-11 border items-center justify-center">
-            <div class="bg-gray-200 w-fit rounded-lg flex items-center p-3">
-              <i class="fa-solid fa-location-dot text-purple-600 text-8xl"></i>
+          <div class="w-full flex justify-center py-16">
+            <div class="w-80 h-64 bg-white rounded-lg">
+              <h1 class="text-purple-600 text-3xl">Viagem com qualidade, conforto garantido!</h1>
             </div>
-            <div class="flex flex-col justify-around h-full">
-              <h1 class="text-purple-700 text-6xl font-bold border-b-2">+999</h1>
-              <h2 class="text-xl text-purple-600 text-end font-semibold">Destinos feitos</h2>
-            </div>
-          </article>
-          <article class="bg-white shadow-lg flex px-5 py-10 gap-11 border items-center justify-center">
-            <div class="bg-gray-200 w-fit rounded-lg flex items-center p-3">
-              <i class="fa-solid fa-bus-simple text-purple-600 text-8xl"></i>
-            </div>
-            <div class="flex flex-col justify-around h-full">
-              <h1 class="text-purple-700 text-6xl font-bold border-b-2">+567</h1>
-              <h2 class="text-xl text-purple-600 text-end font-semibold">Viagens feitas</h2>
-            </div>
-          </article>
-          <article class="bg-white shadow-lg rounded-r-lg flex px-5 py-10 gap-11 border items-center justify-center">
-            <div class="bg-gray-200 w-fit rounded-lg flex items-center p-3">
-              <i class="fa-solid fa-user text-purple-600 text-8xl"></i>
-            </div>
-            <div class="flex flex-col justify-around h-full">
-              <h1 class="text-purple-700 text-6xl font-bold border-b-2">+5.000</h1>
-              <h2 class="text-xl text-purple-600 text-end font-semibold">Clientes satisfeitos</h2>
-            </div>
-          </article>
-        </main>
+          </div>
+        </section>
+        <section class="w-full py-32 bg-no-repeat bg-cover">
+          <main class="grid grid-cols-3 px-10 rounded-lg">
+            <article class="bg-white rounded-l-lg shadow-lg flex py-10 gap-11 border items-center justify-center">
+              <div class="bg-gray-200 w-fit rounded-lg flex items-center p-3">
+                <i class="fa-solid fa-location-dot text-purple-600 text-8xl"></i>
+              </div>
+              <div class="flex flex-col justify-around h-full">
+                <h1 class="text-purple-700 text-6xl font-bold border-b-2">+999</h1>
+                <h2 class="text-xl text-purple-600 text-end font-semibold">Destinos feitos</h2>
+              </div>
+            </article>
+            <article class="bg-white shadow-lg flex px-5 py-10 gap-11 border items-center justify-center">
+              <div class="bg-gray-200 w-fit rounded-lg flex items-center p-3">
+                <i class="fa-solid fa-bus-simple text-purple-600 text-8xl"></i>
+              </div>
+              <div class="flex flex-col justify-around h-full">
+                <h1 class="text-purple-700 text-6xl font-bold border-b-2">+567</h1>
+                <h2 class="text-xl text-purple-600 text-end font-semibold">Viagens feitas</h2>
+              </div>
+            </article>
+            <article class="bg-white shadow-lg rounded-r-lg flex px-5 py-10 gap-11 border items-center justify-center">
+              <div class="bg-gray-200 w-fit rounded-lg flex items-center p-3">
+                <i class="fa-solid fa-user text-purple-600 text-8xl"></i>
+              </div>
+              <div class="flex flex-col justify-around h-full">
+                <h1 class="text-purple-700 text-6xl font-bold border-b-2">+5.000</h1>
+                <h2 class="text-xl text-purple-600 text-end font-semibold">Clientes satisfeitos</h2>
+              </div>
+            </article>
+          </main>
+        </section>
       </section>
       <section class="bg-purple-100 pb-12">
         <header class="flex justify-center items-center py-12 gap-5">
