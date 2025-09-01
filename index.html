@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./styles/output.css" />
     <title>Ana Excursões</title>
     <style>
+
+      html {
+        scroll-behavior: smooth;
+      }
+
       .apresentacao {
         background-image: url("./assets/3.jpg");
       }
@@ -21,6 +26,11 @@
         right: 140px;
         top: 40px;
         z-index: 62;
+        transition: transform 0.5s;
+      }
+
+      .primeira-foto-position:hover {
+        transform: scale(1.25);
       }
 
       .segunda-foto-position {
@@ -29,6 +39,11 @@
         bottom: 50px;
         left: 100px;
         z-index: 61;
+        transition: transform 0.5s;
+      }
+
+      .segunda-foto-position:hover {
+        transform: scale(1.25);
       }
 
       .terceira-foto-position {
@@ -37,6 +52,11 @@
         top: 20px;
         left: 20px;
         z-index: 63;
+        transition: transform 0.5s;
+      }
+
+      .terceira-foto-position:hover {
+        transform: scale(1.10);
       }
 
       .beto-carrero-position {
@@ -45,14 +65,28 @@
         bottom: 50px;
         right: 90px;
         z-index: 64;
+        transition: transform 0.5s;
+      }
+
+      .beto-carrero-position:hover {
+        transform: scale(1.25);
       }
     </style>
   </head>
-  <body>
-    <header class="">
-      <nav class="bg-purple-600 p-4 flex flex-row gap-2">
-        <i class="fa-solid fa-location-dot text-pink-300 text-xl"></i>
-        <h1 class="text-white text-xl">Ana Excursões</h1>
+  <body class="overflow-x-hidden">
+    <header id="home">
+      <nav class="bg-white w-full px-5 py-10 flex justify-around gap-2 exemplo">
+        <div>
+          <a href="/" class="flex gap-3">
+            <i class="fa-solid fa-location-dot text-purple-600 text-2xl"></i>
+            <h1 class="text-purple-600 font-semibold text-xl">Ana Excursões</h1>
+          </a>
+        </div>
+        <div class="flex gap-24 font-semibold text-purple-600">
+          <a href="#home" class="border-purple-600 hover:border-b-2">Home</a>
+          <a href="#destinos" class="border-purple-600 hover:border-b-2">Destinos</a>
+          <a href="#avaliacoes" class="border-purple-600 hover:border-b-2">Avaliações</a>
+        </div>
       </nav>
     </header>
     <main>
@@ -68,16 +102,22 @@
             </div>
           </div>
           <div class="w-full flex justify-center pt-16">
-            <div class="bg-white rounded-lg pl-5 p-10 pr-16 z-[99]">
-              <i class="fa-solid fa-location-dot text-purple-500 text-5xl absolute right-[90px] top-[210px]"></i>
-              <h1 class="text-purple-500 font-bold text-4xl">Destino certo,</h1>
+            <div class="bg-white w-[555px] h-fit  rounded-3xl p-10 z-[99] opacity-90">
+              <i class="fa-solid fa-location-dot text-purple-500 text-5xl absolute right-[90px] top-[240px]"></i>
+              <h1 class="text-purple-600 font-bold text-4xl">Destino certo,</h1>
               <h2 class="text-purple-600 font-bold text-5xl border-b-2 py-2">conforto garantido</h2>
+              <div class="flex mt-5">
+                <a target="_blank" href="https://wa.me/5542998383334?text=Olá vim pelo site e gostaria de mais informações" class="cursor-pointer text-center gap-5 flex justify-center items-center bg-purple-600 hover:bg-purple-400 duration-100 text-white px-10 py-5 font-semibold rounded-3xl w-full">
+                  <i class="fa-brands fa-whatsapp text-3xl"></i>
+                    Agende um destino conosco
+                </a>
+              </div>
             </div>
           </div>
         </section>
         <section class="w-full py-32 bg-no-repeat bg-cover">
           <main class="grid grid-cols-3 px-10 rounded-lg">
-            <article class="bg-white rounded-l-lg shadow-lg flex py-10 gap-11 border items-center justify-center">
+            <article class="bg-white rounded-l-lg shadow-lg flex py-10 gap-11 border items-center justify-center hover:scale-110 duration-200">
               <div class="bg-gray-200 w-fit rounded-lg flex items-center p-3">
                 <i class="fa-solid fa-location-dot text-purple-600 text-8xl"></i>
               </div>
@@ -86,7 +126,7 @@
                 <h2 class="text-xl text-purple-600 text-end font-semibold">Destinos feitos</h2>
               </div>
             </article>
-            <article class="bg-white shadow-lg flex px-5 py-10 gap-11 border items-center justify-center">
+            <article class="bg-white shadow-lg flex px-5 py-10 gap-11 border items-center justify-center hover:scale-110 duration-200">
               <div class="bg-gray-200 w-fit rounded-lg flex items-center p-3">
                 <i class="fa-solid fa-bus-simple text-purple-600 text-8xl"></i>
               </div>
@@ -95,21 +135,21 @@
                 <h2 class="text-xl text-purple-600 text-end font-semibold">Viagens feitas</h2>
               </div>
             </article>
-            <article class="bg-white shadow-lg rounded-r-lg flex px-5 py-10 gap-11 border items-center justify-center">
+            <article class="bg-white shadow-lg rounded-r-lg flex px-5 py-10 gap-3 border items-center justify-center hover:scale-110 duration-200">
               <div class="bg-gray-200 w-fit rounded-lg flex items-center p-3">
                 <i class="fa-solid fa-user text-purple-600 text-8xl"></i>
               </div>
               <div class="flex flex-col justify-around h-full">
                 <h1 class="text-purple-700 text-6xl font-bold border-b-2">+5.000</h1>
-                <h2 class="text-xl text-purple-600 text-end font-semibold">Clientes satisfeitos</h2>
+                <h2 class="text-xl text-purple-600 text-end font-semibold">Passageiros satisfeitos</h2>
               </div>
             </article>
           </main>
         </section>
       </section>
-      <section class="bg-purple-100 pb-12">
+      <section class="bg-purple-100 pb-12" id="destinos">
         <header class="flex justify-center items-center py-12 gap-5">
-          <i class="fa-solid fa-location-dot text-6xl text-purple-600"></i>
+          <i class="fa-solid fa-bus-simple text-6xl text-purple-600"></i>
           <h1 class="text-center text-5xl text-purple-600 font-semibold p-4">
             Destinos
           </h1>
@@ -127,9 +167,9 @@
                 <h1 class="text-gray-700 text-sm flex items-center">03/09/2025 - 10/09/2025</h1>
               </div>
               <div>
-                <button class="bg-purple-600 w-full text-white p-4 flex items-center justify-center gap-4 rounded-lg">
+                <a target="_blank" href="https://wa.me/5542998383334?text=Olá vim pelo site e gostaria de mais informações sobre destino para Vila Germânica" class="cursor-pointer hover:bg-purple-400 duration-100 bg-purple-600 w-full text-white p-4 flex items-center justify-center gap-4 rounded-lg">
                   <i class="fa-solid fa-plus"></i>Detalhes
-                </button>
+                </a>
               </div>
             </div>
           </article>
@@ -145,9 +185,9 @@
                 <h1 class="text-gray-700 text-sm flex items-center">03/09/2025 - 10/09/2025</h1>
               </div>
               <div>
-                <button class="bg-purple-600 w-full text-white p-4 flex items-center justify-center gap-4 rounded-lg">
+                <a target="_blank" href="https://wa.me/5542998383334?text=Olá vim pelo site e gostaria de mais informações sobre destino para Gramado" class="cursor-pointer hover:bg-purple-400 duration-100 bg-purple-600 w-full text-white p-4 flex items-center justify-center gap-4 rounded-lg">
                   <i class="fa-solid fa-plus"></i>Detalhes
-                </button>
+                </a>
               </div>
             </div>
           </article>
@@ -163,35 +203,16 @@
                 <h1 class="text-gray-700 text-sm flex items-center">03/09/2025 - 10/09/2025</h1>
               </div>
               <div>
-                <button class="bg-purple-600 w-full text-white p-4 flex items-center justify-center gap-4 rounded-lg">
+                <a target="_blank" href="https://wa.me/5542998383334?text=Olá vim pelo site e gostaria de mais informações sobre destino para Beto Carrero" class="cursor-pointer hover:bg-purple-400 duration-100 bg-purple-600 w-full text-white p-4 flex items-center justify-center gap-4 rounded-lg">
                   <i class="fa-solid fa-plus"></i>Detalhes
-                </button>
-              </div>
-            </div>
-          </article>
-          <article class="w-full bg-white rounded-lg  shadow-lg">
-            <div class="bg-[url(/assets/betocarrero.jfif)] w-full h-72 bg-cover bg-no-repeat"></div>
-            <div class="p-2 flex gap-2 flex-col">
-              <div class="flex flex-row items-center gap-2">
-                <i class="fa-solid fa-location-dot text-purple-400 text-lg"></i>
-                <h1 class="text-gray-700 text-base flex items-center gap-4">Beto Carrero</h1>
-              </div>
-              <div class="flex flex-row items-center gap-2 ml-1"> 
-                <i class="fa-solid fa-calendar-days text-purple-400 text-sm"></i>
-                <h1 class="text-gray-700 text-sm flex items-center">03/09/2025 - 10/09/2025</h1>
-              </div>
-              <div>
-                <button class="bg-purple-600 w-full text-white p-4 flex items-center justify-center gap-4 rounded-lg">
-                  <i class="fa-solid fa-plus"></i>Detalhes
-                </button>
+                </a>
               </div>
             </div>
           </article>
         </main>
       </section>
-      <section class="bg-purple-600 w-full h-screen">
+      <section class="bg-purple-600 w-full h-screen" id="avaliacoes">
         <header class="flex items-center justify-center gap-14">
-          <i class="fa-solid fa-face-smile text-white text-5xl"></i>
           <h1 class="text-center text-5xl text-white font-semibold py-16">
             Nossas avaliações
           </h1>
@@ -243,8 +264,56 @@
             </p>
           </article>
         </main>
-
       </section>
+      <footer class="w-full bg-zinc-800 p-10 grid grid-cols-4 gap-10">
+        <section class="p-5">
+          <h1 class="text-white border-b border-gray-300 w-full text-xl">
+            Sobre nós
+          </h1>
+          <p class="text-zinc-500 text-justify mt-5">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+          </p>
+        </section>
+        <section class="p-5">
+          <h1 class="text-white border-b border-gray-300 w-full text-xl">
+            Contato
+          </h1>
+          <div class="flex flex-col gap-5">
+            <p class="text-zinc-500 text-justify mt-5">Entre em contato conosco através de:</p>
+            <div>
+              <p class="text-zinc-300 font-semibold"><i class="fa-solid fa-phone text-sm text-zinc-300"></i> Fones:</p>
+              <p class="text-zinc-500">(42) 9 9838-3334</p>
+              <p class="text-zinc-500">(42) 9 9825-6125</p>
+            </div>
+            <div>
+              <p class="text-zinc-300 font-semibold"><i class="fa-solid fa-envelope text-sm text-zinc-300"></i> Email:</p>
+              <p class="text-zinc-500">anaexcursoess@gmail.com</p>
+            </div>
+            <div>
+              <p class="text-zinc-300 font-semibold"><i class="fa-solid fa-location-dot text-zinc-300"></i> Endereço:</p>
+              <a class="text-zinc-500 text-justify">R. Luís Pinto de Carvalho, 427 - Vila Mariana, Prudentópolis - PR, 84400-000</a>
+            </div>
+          </div>
+        </section>
+        <section class="p-5">
+          <h1 class="text-white border-b border-gray-300 w-full text-xl">
+            Horário de atendimento
+          </h1>
+          <p class="text-zinc-500 mt-5 text-start">Segunda à Sexta: 8:00 às 12:00 – 13:30 às 20:00</p>
+        </section>
+        <section class="p-5">
+          <h1 class="text-white border-b border-gray-300 w-full text-xl mb-5">
+            Redes sociais
+          </h1>
+          <div class="flex gap-3">
+            <a target="_blank" href="https://www.facebook.com/aanaexcursoess" class="text-zinc-300 hover:scale-125 duration-75"><i class="fa-brands fa-facebook text-xl"></i></a>
+            <a target="_blank" href="https://www.instagram.com/ana.excursoess/" class="text-zinc-300 hover:scale-125 duration-75"><i class="fa-brands fa-instagram text-xl"></i></a>
+          </div>
+        </section>
+      </footer>
     </main>
+    <footer>
+      <h2 class="text-center py-3 bg-zinc-900 text-gray-300 text-sm">Desenvolvido por <a target="_blank" href="https://www.instagram.com/victor_dicous/" class="border-b border-gray-300">João Victor</a></h2>
+    </footer>
   </body>
 </html>
