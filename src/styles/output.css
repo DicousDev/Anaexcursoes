@@ -2093,32 +2093,8 @@ video {
   --tw-bg-opacity: 0.85;
 }
 
-.bg-\[url\(\'\.\/src\/images\/1\.jpg\'\)\] {
-  background-image: url('./src/images/1.jpg');
-}
-
-.bg-\[url\(\'\.\/src\/images\/2\.jpg\'\)\] {
-  background-image: url('./src/images/2.jpg');
-}
-
-.bg-\[url\(\'\.\/src\/images\/3\.jpg\'\)\] {
-  background-image: url('./src/images/3.jpg');
-}
-
-.bg-\[url\(\'\.\/src\/images\/betocarrero\.jfif\'\)\] {
-  background-image: url('./src/images/betocarrero.jfif');
-}
-
-.bg-\[url\(\.\/src\/images\/betocarrero\.jfif\)\] {
-  background-image: url(./src/images/betocarrero.jfif);
-}
-
 .bg-\[url\(\.\/src\/images\/blumenau\.jpg\)\] {
   background-image: url(./src/images/blumenau.jpg);
-}
-
-.bg-\[url\(\.\/src\/images\/gramado\.jpg\)\] {
-  background-image: url(./src/images/gramado.jpg);
 }
 
 .decoration-slice {
@@ -3296,20 +3272,48 @@ body {
     top: 4rem;
   }
 
+  .\32xl\:top-24 {
+    top: 6rem;
+  }
+
+  .\32xl\:top-48 {
+    top: 12rem;
+  }
+
+  .\32xl\:z-\[70\] {
+    z-index: 70;
+  }
+
   .\32xl\:block {
     display: block;
   }
 
+  .\32xl\:h-\[210px\] {
+    height: 210px;
+  }
+
+  .\32xl\:h-\[250px\] {
+    height: 250px;
+  }
+
+  .\32xl\:h-\[220px\] {
+    height: 220px;
+  }
+
+  .\32xl\:w-\[210px\] {
+    width: 210px;
+  }
+
+  .\32xl\:w-\[250px\] {
+    width: 250px;
+  }
+
+  .\32xl\:w-\[220px\] {
+    width: 220px;
+  }
+
   .\32xl\:gap-16 {
     gap: 4rem;
-  }
-
-  .\32xl\:bg-\[url\(\'\.\/src\/images\/2\.jpg\'\)\] {
-    background-image: url('./src/images/2.jpg');
-  }
-
-  .\32xl\:bg-\[url\(\'\.\/src\/images\/3\.jpg\'\)\] {
-    background-image: url('./src/images/3.jpg');
   }
 
   .\32xl\:text-2xl {
