@@ -4,11 +4,6 @@ module.exports = {
   theme: {
     fontFamily: {
       'sans': ['Roboto', 'sans-serif']
-    },
-    extend: {
-      backgroundImage: {
-        "praia": "url(/assets/praia.jpg)"
-      }
     }
   },
   plugins: [],

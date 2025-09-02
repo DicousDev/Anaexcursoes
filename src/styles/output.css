@@ -2121,8 +2121,52 @@ video {
   background-image: url(/assets/gramado.jpg);
 }
 
-.bg-\[url\(\/assets\/praia6\.jpg\)\] {
-  background-image: url(/assets/praia6.jpg);
+.bg-\[url\(\'\.\/src\/images\/1\.jpg\'\)\] {
+  background-image: url('./src/images/1.jpg');
+}
+
+.bg-\[url\(\'\.\/src\/images\/2\.jpg\'\)\] {
+  background-image: url('./src/images/2.jpg');
+}
+
+.bg-\[url\(\'\.\/src\/images\/3\.jpg\'\)\] {
+  background-image: url('./src/images/3.jpg');
+}
+
+.bg-\[url\(\'\.\/src\/images\/betocarrero\.jfif\'\)\] {
+  background-image: url('./src/images/betocarrero.jfif');
+}
+
+.bg-\[url\(\'\/src\/images\/1\.jpg\'\)\] {
+  background-image: url('/src/images/1.jpg');
+}
+
+.bg-\[url\(\'\/src\/images\/2\.jpg\'\)\] {
+  background-image: url('/src/images/2.jpg');
+}
+
+.bg-\[url\(\'\/src\/images\/3\.jpg\'\)\] {
+  background-image: url('/src/images/3.jpg');
+}
+
+.bg-\[url\(\'\/src\/images\/betocarrero\.jfif\'\)\] {
+  background-image: url('/src/images/betocarrero.jfif');
+}
+
+.bg-\[url\(src\/images\/blumenau\.jpg\)\] {
+  background-image: url(src/images/blumenau.jpg);
+}
+
+.bg-\[url\(\/src\/images\/blumenau\.jpg\)\] {
+  background-image: url(/src/images/blumenau.jpg);
+}
+
+.bg-\[url\(\/src\/images\/gramado\.jpg\)\] {
+  background-image: url(/src/images/gramado.jpg);
+}
+
+.bg-\[url\(\/src\/images\/betocarrero\.jfif\)\] {
+  background-image: url(/src/images/betocarrero.jfif);
 }
 
 .decoration-slice {
@@ -3314,6 +3358,22 @@ body {
 
   .\32xl\:bg-\[url\(\'\/assets\/3\.jpg\'\)\] {
     background-image: url('/assets/3.jpg');
+  }
+
+  .\32xl\:bg-\[url\(\'\.\/src\/images\/2\.jpg\'\)\] {
+    background-image: url('./src/images/2.jpg');
+  }
+
+  .\32xl\:bg-\[url\(\'\.\/src\/images\/3\.jpg\'\)\] {
+    background-image: url('./src/images/3.jpg');
+  }
+
+  .\32xl\:bg-\[url\(\'\/src\/images\/2\.jpg\'\)\] {
+    background-image: url('/src/images/2.jpg');
+  }
+
+  .\32xl\:bg-\[url\(\'\/src\/images\/3\.jpg\'\)\] {
+    background-image: url('/src/images/3.jpg');
   }
 
   .\32xl\:text-2xl {

@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <link rel="stylesheet" href="./styles/output.css" />
+    <link rel="stylesheet" href="./src/styles/output.css" />
     <title>Ana Excursões</title>
+    <style>
+      .praia {
+        background-image: url("./src/images/praia6.jpg");
+      }
+    </style>
   </head>
   <body class="overflow-x-hidden">
     <header id="home">
@@ -25,14 +30,14 @@
     </header>
     <main>
       <div class="z-50 w-[720px] h-[610px] blur-3xl sm:h-[400px] bg-white absolute top-15 left-0 bg-opacity-85"></div>
-      <section class="w-full h-full bg-[url(/assets/praia6.jpg)] bg-no-repeat bg-cover">
+      <section class="w-full h-full praia bg-no-repeat bg-cover">
         <section class="w-full sm:h-[400px] h-[550px] flex justify-center bg-center bg-cover bg-no-repeat">
           <div class="w-full hidden lg:flex">
             <div class="hidden lg:block w-full h-full relative">
-              <div class="hidden 2xl:right-56 2xl:top-16 xl:block xl:right-5 xl:top-3  bg-[url('/assets/1.jpg')] bg-no-repeat bg-center bg-cover rounded-full absolute z-[62] w-[200px] h-[200px] top-10 right-36 hover:scale-125 duration-500 border-4 border-purple-100"></div>
-              <div class="hidden 2xl:left-16 2xl:top-16 lg:block 2xl:bg-[url('/assets/2.jpg')] bg-[url('/assets/3.jpg')] bg-no-repeat bg-center bg-cover rounded-full absolute w-[250px] h-[250px] top-5 left-5 z-[61] hover:scale-125 duration-500 border-4 border-purple-100"></div>
-              <div class="hidden 2xl:block 2xl:left-40 2xl:bottom-0 2xl:bg-[url('/assets/3.jpg')] bg-[url('/assets/2.jpg')] bg-no-repeat bg-center bg-cover rounded-full absolute w-[210px] h-[210px] duration-500 bottom-12 left-24 z-[63] hover:scale-125 border-4 border-purple-100"></div>
-              <div class="hidden 2xl:bottom-10 2xl:right-36 lg:bottom-8 lg:block xl:right-44 xl:bottom-0 bg-[url('/assets/betocarrero.jfif')] bg-no-repeat bg-center bg-cover rounded-full absolute z-[64] bottom-44 right-7 w-[210px] h-[210px] duration-500 hover:scale-125 border-4 border-purple-100"></div>
+              <div class="hidden 2xl:right-56 2xl:top-16 xl:block xl:right-5 xl:top-3  bg-[url('/src/images/1.jpg')] bg-no-repeat bg-center bg-cover rounded-full absolute z-[62] w-[200px] h-[200px] top-10 right-36 hover:scale-125 duration-500 border-4 border-purple-100"></div>
+              <div class="hidden 2xl:left-16 2xl:top-16 lg:block 2xl:bg-[url('/src/images/2.jpg')] bg-[url('/src/images/3.jpg')] bg-no-repeat bg-center bg-cover rounded-full absolute w-[250px] h-[250px] top-5 left-5 z-[61] hover:scale-125 duration-500 border-4 border-purple-100"></div>
+              <div class="hidden 2xl:block 2xl:left-40 2xl:bottom-0 2xl:bg-[url('/src/images/3.jpg')] bg-[url('/src/images/2.jpg')] bg-no-repeat bg-center bg-cover rounded-full absolute w-[210px] h-[210px] duration-500 bottom-12 left-24 z-[63] hover:scale-125 border-4 border-purple-100"></div>
+              <div class="hidden 2xl:bottom-10 2xl:right-36 lg:bottom-8 lg:block xl:right-44 xl:bottom-0 bg-[url('/src/images/betocarrero.jfif')] bg-no-repeat bg-center bg-cover rounded-full absolute z-[64] bottom-44 right-7 w-[210px] h-[210px] duration-500 hover:scale-125 border-4 border-purple-100"></div>
             </div>
           </div>
           <div class="w-full flex justify-center pt-16">
@@ -96,7 +101,7 @@
         </header>
         <main class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-8 items-center px-10 md:px-16 xl:px-10">
           <article class="w-full bg-white rounded-lg shadow-lg">
-            <div class="bg-[url(/assets/blumenau.jpg)] w-full h-72 bg-cover bg-no-repeat"></div>
+            <div class="bg-[url(/src/images/blumenau.jpg)] w-full h-72 bg-cover bg-no-repeat"></div>
             <div class="p-2 flex gap-2 flex-col">
               <div class="flex flex-row items-center gap-2">
                 <i class="fa-solid fa-location-dot text-purple-400 text-lg"></i>
@@ -114,7 +119,7 @@
             </div>
           </article>
           <article class="w-full bg-white rounded-lg shadow-lg">
-            <div class="bg-[url(/assets/gramado.jpg)] w-full h-72 bg-cover bg-no-repeat"></div>
+            <div class="bg-[url(/src/images/gramado.jpg)] w-full h-72 bg-cover bg-no-repeat"></div>
             <div class="p-2 flex gap-2 flex-col">
               <div class="flex flex-row items-center gap-2">
                 <i class="fa-solid fa-location-dot text-purple-400 text-lg"></i>
@@ -132,7 +137,7 @@
             </div>
           </article>
           <article class="w-full bg-white rounded-lg  shadow-lg">
-            <div class="bg-[url(/assets/betocarrero.jfif)] w-full h-72 bg-cover bg-no-repeat"></div>
+            <div class="bg-[url(/src/images/betocarrero.jfif)] w-full h-72 bg-cover bg-no-repeat"></div>
             <div class="p-2 flex gap-2 flex-col">
               <div class="flex flex-row items-center gap-2">
                 <i class="fa-solid fa-location-dot text-purple-400 text-lg"></i>
@@ -159,7 +164,7 @@
         </header> 
         <main class="grid grid-cols-1 lg:grid-cols-3 justify-items-center gap-16 lg:gap-5 pb-10 px-5">
           <article class="p-4 max-w-96 bg-white rounded-3xl flex flex-col text-center justify-center items-center">
-            <img src="./assets/elson.png" class="rounded-full size-24" />
+            <img src="./src/images/elson.png" class="rounded-full size-24" />
             <h1 class="text-gray-500 text-3xl my-3">Elson Martins</h1>
             <div class="text-yellow-400 text-2xl">
               <i class="fa-solid fa-star"></i>
@@ -174,7 +179,7 @@
             </p>
           </article>
           <article class="p-4 max-w-96 bg-white rounded-3xl flex flex-col text-center justify-center items-center">
-            <img src="./assets/JoaoVictor.jpg" class="rounded-full size-24" />
+            <img src="./src/images/JoaoVictor.jpg" class="rounded-full size-24" />
             <h1 class="text-gray-500 text-3xl my-3">João Victor</h1>
             <div class="text-yellow-400 text-2xl">
               <i class="fa-solid fa-star"></i>
@@ -189,7 +194,7 @@
             </p>
           </article>
           <article class="p-4 max-w-96 bg-white rounded-3xl flex flex-col text-center justify-center items-center">
-            <img src="./assets/JoaoVictor.jpg" class="rounded-full size-24" />
+            <img src="./src/images/JoaoVictor.jpg" class="rounded-full size-24" />
             <h1 class="text-gray-500 text-3xl my-3">João Victor</h1>
             <div class="text-2xl">
               <i class="fa-solid fa-star text-yellow-400"></i>
