@@ -2093,34 +2093,6 @@ video {
   --tw-bg-opacity: 0.85;
 }
 
-.bg-\[url\(\'\/assets\/1\.jpg\'\)\] {
-  background-image: url('/assets/1.jpg');
-}
-
-.bg-\[url\(\'\/assets\/2\.jpg\'\)\] {
-  background-image: url('/assets/2.jpg');
-}
-
-.bg-\[url\(\'\/assets\/3\.jpg\'\)\] {
-  background-image: url('/assets/3.jpg');
-}
-
-.bg-\[url\(\'\/assets\/betocarrero\.jfif\'\)\] {
-  background-image: url('/assets/betocarrero.jfif');
-}
-
-.bg-\[url\(\/assets\/betocarrero\.jfif\)\] {
-  background-image: url(/assets/betocarrero.jfif);
-}
-
-.bg-\[url\(\/assets\/blumenau\.jpg\)\] {
-  background-image: url(/assets/blumenau.jpg);
-}
-
-.bg-\[url\(\/assets\/gramado\.jpg\)\] {
-  background-image: url(/assets/gramado.jpg);
-}
-
 .bg-\[url\(\'\.\/src\/images\/1\.jpg\'\)\] {
   background-image: url('./src/images/1.jpg');
 }
@@ -2137,36 +2109,16 @@ video {
   background-image: url('./src/images/betocarrero.jfif');
 }
 
-.bg-\[url\(\'\/src\/images\/1\.jpg\'\)\] {
-  background-image: url('/src/images/1.jpg');
+.bg-\[url\(\.\/src\/images\/betocarrero\.jfif\)\] {
+  background-image: url(./src/images/betocarrero.jfif);
 }
 
-.bg-\[url\(\'\/src\/images\/2\.jpg\'\)\] {
-  background-image: url('/src/images/2.jpg');
+.bg-\[url\(\.\/src\/images\/blumenau\.jpg\)\] {
+  background-image: url(./src/images/blumenau.jpg);
 }
 
-.bg-\[url\(\'\/src\/images\/3\.jpg\'\)\] {
-  background-image: url('/src/images/3.jpg');
-}
-
-.bg-\[url\(\'\/src\/images\/betocarrero\.jfif\'\)\] {
-  background-image: url('/src/images/betocarrero.jfif');
-}
-
-.bg-\[url\(src\/images\/blumenau\.jpg\)\] {
-  background-image: url(src/images/blumenau.jpg);
-}
-
-.bg-\[url\(\/src\/images\/blumenau\.jpg\)\] {
-  background-image: url(/src/images/blumenau.jpg);
-}
-
-.bg-\[url\(\/src\/images\/gramado\.jpg\)\] {
-  background-image: url(/src/images/gramado.jpg);
-}
-
-.bg-\[url\(\/src\/images\/betocarrero\.jfif\)\] {
-  background-image: url(/src/images/betocarrero.jfif);
+.bg-\[url\(\.\/src\/images\/gramado\.jpg\)\] {
+  background-image: url(./src/images/gramado.jpg);
 }
 
 .decoration-slice {
@@ -3352,28 +3304,12 @@ body {
     gap: 4rem;
   }
 
-  .\32xl\:bg-\[url\(\'\/assets\/2\.jpg\'\)\] {
-    background-image: url('/assets/2.jpg');
-  }
-
-  .\32xl\:bg-\[url\(\'\/assets\/3\.jpg\'\)\] {
-    background-image: url('/assets/3.jpg');
-  }
-
   .\32xl\:bg-\[url\(\'\.\/src\/images\/2\.jpg\'\)\] {
     background-image: url('./src/images/2.jpg');
   }
 
   .\32xl\:bg-\[url\(\'\.\/src\/images\/3\.jpg\'\)\] {
     background-image: url('./src/images/3.jpg');
-  }
-
-  .\32xl\:bg-\[url\(\'\/src\/images\/2\.jpg\'\)\] {
-    background-image: url('/src/images/2.jpg');
-  }
-
-  .\32xl\:bg-\[url\(\'\/src\/images\/3\.jpg\'\)\] {
-    background-image: url('/src/images/3.jpg');
   }
 
   .\32xl\:text-2xl {
