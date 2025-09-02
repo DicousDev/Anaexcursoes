@@ -949,10 +949,6 @@ video {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .w-\[200px\] {
   width: 200px;
 }
@@ -1336,20 +1332,12 @@ video {
   grid-auto-flow: column dense;
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1548,6 +1536,10 @@ video {
   gap: 3.5rem;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1566,10 +1558,6 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
-}
-
-.gap-16 {
-  gap: 4rem;
 }
 
 .gap-x-8 {
@@ -2076,9 +2064,9 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
-.bg-purple-100 {
+.bg-purple-50 {
   --tw-bg-opacity: 1;
-  background-color: rgb(243 232 255 / var(--tw-bg-opacity, 1));
+  background-color: rgb(250 245 255 / var(--tw-bg-opacity, 1));
 }
 
 .bg-purple-600 {
@@ -2099,11 +2087,6 @@ video {
 .bg-zinc-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity, 1));
-}
-
-.bg-purple-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 245 255 / var(--tw-bg-opacity, 1));
 }
 
 .bg-opacity-85 {
@@ -2136,6 +2119,10 @@ video {
 
 .bg-\[url\(\/assets\/gramado\.jpg\)\] {
   background-image: url(/assets/gramado.jpg);
+}
+
+.bg-\[url\(\/assets\/praia6\.jpg\)\] {
+  background-image: url(/assets/praia6.jpg);
 }
 
 .decoration-slice {
@@ -2272,10 +2259,6 @@ video {
   padding: 1.25rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
-}
-
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2341,24 +2324,16 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
 
 .pt-16 {
   padding-top: 4rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
 }
 
 .text-left {
@@ -3005,7 +2980,7 @@ video {
 }
 
 body {
-  background-color: green;
+  background-color: white;
 }
 
 @media (min-width: 640px) {
@@ -3145,11 +3120,6 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:px-32 {
-    padding-left: 8rem;
-    padding-right: 8rem;
-  }
-
   .md\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -3186,10 +3156,6 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -3204,10 +3170,6 @@ body {
 
   .lg\:gap-5 {
     gap: 1.25rem;
-  }
-
-  .lg\:gap-10 {
-    gap: 2.5rem;
   }
 
   .lg\:rounded-none {
@@ -3294,11 +3256,6 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .xl\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
   .xl\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -3347,16 +3304,8 @@ body {
     display: block;
   }
 
-  .\32xl\:gap-11 {
-    gap: 2.75rem;
-  }
-
   .\32xl\:gap-16 {
     gap: 4rem;
-  }
-
-  .\32xl\:gap-14 {
-    gap: 3.5rem;
   }
 
   .\32xl\:bg-\[url\(\'\/assets\/2\.jpg\'\)\] {
@@ -3367,24 +3316,9 @@ body {
     background-image: url('/assets/3.jpg');
   }
 
-  .\32xl\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .\32xl\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .\32xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .\32xl\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
   }
 
   .\32xl\:text-7xl {
