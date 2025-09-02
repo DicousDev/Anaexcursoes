@@ -19,70 +19,18 @@
       .praia {
         background-image: url("./assets/praia6.jpg");
       }
-
-      .primeira-foto-position {
-        width: 200px;
-        height: 200px;
-        right: 140px;
-        top: 40px;
-        z-index: 62;
-        transition: transform 0.5s;
-      }
-
-      .primeira-foto-position:hover {
-        transform: scale(1.25);
-      }
-
-      .segunda-foto-position {
-        width: 210px;
-        height: 210px;
-        bottom: 50px;
-        left: 100px;
-        z-index: 61;
-        transition: transform 0.5s;
-      }
-
-      .segunda-foto-position:hover {
-        transform: scale(1.25);
-      }
-
-      .terceira-foto-position {
-        width: 250px;
-        height: 250px;
-        top: 20px;
-        left: 20px;
-        z-index: 63;
-        transition: transform 0.5s;
-      }
-
-      .terceira-foto-position:hover {
-        transform: scale(1.10);
-      }
-
-      .beto-carrero-position {
-        width: 210px;
-        height: 210px;
-        bottom: 50px;
-        right: 90px;
-        z-index: 64;
-        transition: transform 0.5s;
-      }
-
-      .beto-carrero-position:hover {
-        transform: scale(1.25);
-      }
     </style>
   </head>
   <body class="overflow-x-hidden">
     <header id="home">
-      <nav class="bg-white w-full px-5 py-10 flex justify-around gap-2 exemplo">
+      <nav class="bg-white w-full px-14 py-10 flex lg:px-10 lg:justify-around gap-2">
         <div>
           <a href="/" class="flex gap-3">
             <i class="fa-solid fa-location-dot text-purple-600 text-2xl"></i>
             <h1 class="text-purple-600 font-semibold text-xl">Ana Excursões</h1>
           </a>
         </div>
-        <div class="flex gap-24 font-semibold text-purple-600">
+        <div class="lg:flex hidden gap-24 font-semibold text-purple-600">
           <a href="#home" class="border-purple-600 hover:border-b-2">Home</a>
           <a href="#destinos" class="border-purple-600 hover:border-b-2">Destinos</a>
           <a href="#avaliacoes" class="border-purple-600 hover:border-b-2">Avaliações</a>
@@ -90,22 +38,22 @@
       </nav>
     </header>
     <main>
-      <div class="z-50 w-[720px] h-[610px] blur-3xl bg-white absolute top-15 bg-opacity-85"></div>
-      <section class="w-full h-full praia">
-        <section class="w-full h-[550px] flex bg-center bg-cover bg-no-repeat">
-          <div class="w-full flex">
-            <div class="w-full h-full relative apresentacao-container-position">
-              <div class="bg-[url('/assets/1.jpg')] bg-no-repeat bg-center bg-cover rounded-full absolute primeira-foto-position border-4 border-purple-100"></div>
-              <div class="bg-[url('/assets/2.jpg')] bg-no-repeat bg-center bg-cover rounded-full absolute segunda-foto-position border-4 border-purple-100"></div>
-              <div class="bg-[url('/assets/3.jpg')] bg-no-repeat bg-center bg-cover rounded-full absolute terceira-foto-position border-4 border-purple-100"></div>
-              <div class="bg-[url('/assets/betocarrero.jfif')] bg-no-repeat bg-center bg-cover rounded-full absolute beto-carrero-position border-4 border-purple-100"></div>
+      <div class="z-50 w-[720px] h-[610px] blur-3xl sm:h-[400px] bg-white absolute top-15 left-0 bg-opacity-85"></div>
+      <section class="w-full h-full praia bg-no-repeat bg-cover">
+        <section class="w-full sm:h-[400px] h-[550px] flex justify-center bg-center bg-cover bg-no-repeat">
+          <div class="w-full hidden lg:flex">
+            <div class="hidden lg:block w-full h-full relative apresentacao-container-position">
+              <div class="hidden 2xl:right-56 2xl:top-16 xl:block xl:right-5 xl:top-3  bg-[url('/assets/1.jpg')] bg-no-repeat bg-center bg-cover rounded-full absolute z-[62] w-[200px] h-[200px] top-10 right-36 hover:scale-125 duration-500 border-4 border-purple-100"></div>
+              <div class="hidden 2xl:left-16 2xl:top-16 lg:block 2xl:bg-[url('/assets/2.jpg')] bg-[url('/assets/3.jpg')] bg-no-repeat bg-center bg-cover rounded-full absolute w-[250px] h-[250px] top-5 left-5 z-[61] hover:scale-125 duration-500 border-4 border-purple-100"></div>
+              <div class="hidden 2xl:block 2xl:left-40 2xl:bottom-0 2xl:bg-[url('/assets/3.jpg')] bg-[url('/assets/2.jpg')] bg-no-repeat bg-center bg-cover rounded-full absolute w-[210px] h-[210px] duration-500 bottom-12 left-24 z-[63] hover:scale-125 border-4 border-purple-100"></div>
+              <div class="hidden 2xl:bottom-10 2xl:right-36 lg:bottom-8 lg:block xl:right-44 xl:bottom-0 bg-[url('/assets/betocarrero.jfif')] bg-no-repeat bg-center bg-cover rounded-full absolute z-[64] bottom-44 right-7 w-[210px] h-[210px] duration-500 hover:scale-125 border-4 border-purple-100"></div>
             </div>
           </div>
           <div class="w-full flex justify-center pt-16">
-            <div class="bg-white w-[555px] h-fit  rounded-3xl p-10 z-[99] opacity-90">
-              <i class="fa-solid fa-location-dot text-purple-500 text-5xl absolute right-[90px] top-[240px]"></i>
-              <h1 class="text-purple-600 font-bold text-4xl">Destino certo,</h1>
-              <h2 class="text-purple-600 font-bold text-5xl border-b-2 py-2">conforto garantido</h2>
+            <div class="bg-white w-[500px] min-[1100px]:w-[555px] h-fit rounded-3xl p-10 z-[99] opacity-90">
+              <i class="fa-solid fa-location-dot text-purple-500 text-5xl absolute md:right-[215px] right-[150px] top-[240px] lg:right-[90px] xl:right-[80px] xl:top-[250px] 2xl:right-[130px] "></i>
+              <h1 class="text-purple-600 font-bold text-3xl min-[1100px]:text-4xl">Destino certo,</h1>
+              <h2 class="text-purple-600 font-bold text-4xl min-[1100px]:text-5xl border-b-2 py-2">conforto garantido</h2>
               <div class="flex mt-5">
                 <a target="_blank" href="https://wa.me/5542998383334?text=Olá vim pelo site e gostaria de mais informações" class="cursor-pointer text-center gap-5 flex justify-center items-center bg-purple-600 hover:bg-purple-400 duration-100 text-white px-10 py-5 font-semibold rounded-3xl w-full">
                   <i class="fa-brands fa-whatsapp text-3xl"></i>
@@ -115,46 +63,52 @@
             </div>
           </div>
         </section>
-        <section class="w-full py-32 bg-no-repeat bg-cover">
-          <main class="grid grid-cols-3 px-10 rounded-lg">
-            <article class="bg-white rounded-l-lg shadow-lg flex py-10 gap-11 border items-center justify-center hover:scale-110 duration-200">
-              <div class="bg-gray-200 w-fit rounded-lg flex items-center p-3">
-                <i class="fa-solid fa-location-dot text-purple-600 text-8xl"></i>
-              </div>
-              <div class="flex flex-col justify-around h-full">
-                <h1 class="text-purple-700 text-6xl font-bold border-b-2">+999</h1>
-                <h2 class="text-xl text-purple-600 text-end font-semibold">Destinos feitos</h2>
-              </div>
-            </article>
-            <article class="bg-white shadow-lg flex px-5 py-10 gap-11 border items-center justify-center hover:scale-110 duration-200">
-              <div class="bg-gray-200 w-fit rounded-lg flex items-center p-3">
-                <i class="fa-solid fa-bus-simple text-purple-600 text-8xl"></i>
-              </div>
-              <div class="flex flex-col justify-around h-full">
-                <h1 class="text-purple-700 text-6xl font-bold border-b-2">+567</h1>
-                <h2 class="text-xl text-purple-600 text-end font-semibold">Viagens feitas</h2>
+        <section class="w-full sm:py-10 py-32 bg-no-repeat bg-cover">
+          <main class="grid sm:grid-cols-1 sm:gap-20 lg:gap-0 lg:grid-cols-3 rounded-lg p-5">
+            <article class="flex justify-center items-center">
+              <div class="bg-white h-48 w-fit lg:rounded-none lg:rounded-l-lg sm:w-[500px] md:w-[600px] lg:w-full lg:px-0 sm:px-10 px-20 sm:rounded-3xl rounded-l-lg shadow-lg flex py-10 gap-11 lg:gap-0 sm:gap-24 border items-center justify-center hover:scale-110 duration-200 2xl:gap-16">
+                <div class="bg-gray-100 sm:bg-white w-fit rounded-lg flex items-center">
+                  <i class="fa-solid fa-location-dot text-purple-600 text-8xl"></i>
+                </div>
+                <div class="flex flex-col justify-around h-full">
+                  <h1 class="text-purple-700 text-6xl font-bold border-b-2 2xl:text-7xl">+ 999</h1>
+                  <h2 class="text-xl md:text-2xl lg:text-base text-purple-600 text-left font-semibold mt-2 2xl:text-2xl">Destinos feitos</h2>
+                </div>
               </div>
             </article>
-            <article class="bg-white shadow-lg rounded-r-lg flex px-5 py-10 gap-3 border items-center justify-center hover:scale-110 duration-200">
-              <div class="bg-gray-200 w-fit rounded-lg flex items-center p-3">
-                <i class="fa-solid fa-user text-purple-600 text-8xl"></i>
+            <article class="flex justify-center items-center">
+              <div class="bg-white h-48 w-fit lg:rounded-none sm:w-[500px] md:w-[600px] lg:w-full lg:px-0 sm:px-10 px-20 sm:rounded-3xl shadow-lg flex py-10 lg:gap-0 sm:gap-24 gap-11 border items-center justify-center hover:scale-110 duration-200 2xl:gap-16">
+                <div class="bg-gray-100 sm:bg-white w-fit rounded-lg flex items-center">
+                  <i class="fa-solid fa-bus-simple text-purple-600 text-8xl"></i>
+                </div>
+                <div class="flex flex-col justify-around h-full">
+                  <h1 class="text-purple-700 text-6xl font-bold border-b-2 2xl:text-7xl">+ 567</h1>
+                  <h2 class="text-xl md:text-2xl lg:text-base text-purple-600 text-left font-semibold mt-2 2xl:text-2xl">Viagens feitas</h2>
+                </div>
               </div>
-              <div class="flex flex-col justify-around h-full">
-                <h1 class="text-purple-700 text-6xl font-bold border-b-2">+5.000</h1>
-                <h2 class="text-xl text-purple-600 text-end font-semibold">Passageiros satisfeitos</h2>
+            </article>
+            <article class="flex justify-center items-center">
+              <div class="bg-white h-48 w-fit lg:rounded-none lg:rounded-r-lg sm:w-[500px] md:w-[600px] lg:w-full lg:px-0 sm:px-10 sm:rounded-3xl shadow-lg rounded-r-lg px-20 py-10 lg:gap-0 sm:gap-24 gap-3 border flex items-center justify-center hover:scale-110 duration-200 2xl:gap-16">
+                <div class="bg-gray-100 sm:bg-white w-fit rounded-lg flex items-center">
+                  <i class="fa-solid fa-user text-purple-600 text-8xl"></i>
+                </div>
+                <div class="flex flex-col justify-around h-full">
+                  <h1 class="text-purple-700 text-5xl font-bold border-b-2 2xl:text-7xl">+ 5.000</h1>
+                  <h2 class="md:text-2xl lg:text-base text-purple-600 font-semibold text-left mt-2 2xl:text-2xl">Passageiros satisfeitos</h2>
+                </div>
               </div>
             </article>
           </main>
         </section>
       </section>
-      <section class="bg-purple-100 pb-12" id="destinos">
+      <section class="bg-purple-50 pb-12" id="destinos">
         <header class="flex justify-center items-center py-12 gap-5">
           <i class="fa-solid fa-bus-simple text-6xl text-purple-600"></i>
           <h1 class="text-center text-5xl text-purple-600 font-semibold p-4">
             Destinos
           </h1>
         </header>
-        <main class="grid grid-cols-3 gap-x-8 gap-y-8 items-center px-20">
+        <main class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-8 items-center px-10 md:px-16 xl:px-10">
           <article class="w-full bg-white rounded-lg shadow-lg">
             <div class="bg-[url(/assets/blumenau.jpg)] w-full h-72 bg-cover bg-no-repeat"></div>
             <div class="p-2 flex gap-2 flex-col">
@@ -168,7 +122,7 @@
               </div>
               <div>
                 <a target="_blank" href="https://wa.me/5542998383334?text=Olá vim pelo site e gostaria de mais informações sobre destino para Vila Germânica" class="cursor-pointer hover:bg-purple-400 duration-100 bg-purple-600 w-full text-white p-4 flex items-center justify-center gap-4 rounded-lg">
-                  <i class="fa-solid fa-plus"></i>Detalhes
+                  <i class="fa-solid fa-plus"></i>Informações
                 </a>
               </div>
             </div>
@@ -186,7 +140,7 @@
               </div>
               <div>
                 <a target="_blank" href="https://wa.me/5542998383334?text=Olá vim pelo site e gostaria de mais informações sobre destino para Gramado" class="cursor-pointer hover:bg-purple-400 duration-100 bg-purple-600 w-full text-white p-4 flex items-center justify-center gap-4 rounded-lg">
-                  <i class="fa-solid fa-plus"></i>Detalhes
+                  <i class="fa-solid fa-plus"></i>Informações
                 </a>
               </div>
             </div>
@@ -204,23 +158,23 @@
               </div>
               <div>
                 <a target="_blank" href="https://wa.me/5542998383334?text=Olá vim pelo site e gostaria de mais informações sobre destino para Beto Carrero" class="cursor-pointer hover:bg-purple-400 duration-100 bg-purple-600 w-full text-white p-4 flex items-center justify-center gap-4 rounded-lg">
-                  <i class="fa-solid fa-plus"></i>Detalhes
+                  <i class="fa-solid fa-plus"></i>Informações
                 </a>
               </div>
             </div>
           </article>
         </main>
       </section>
-      <section class="bg-purple-600 w-full h-screen" id="avaliacoes">
+      <section class="bg-purple-600 w-full" id="avaliacoes">
         <header class="flex items-center justify-center gap-14">
           <h1 class="text-center text-5xl text-white font-semibold py-16">
             Nossas avaliações
           </h1>
-        </header>
-        <main class="grid grid-cols-3 justify-items-center">
+        </header> 
+        <main class="grid grid-cols-1 lg:grid-cols-3 justify-items-center gap-16 lg:gap-5 pb-10 px-5">
           <article class="p-4 max-w-96 bg-white rounded-3xl flex flex-col text-center justify-center items-center">
-            <img src="./assets/JoaoVictor.jpg" class="rounded-full size-24" />
-            <h1 class="text-gray-500 text-3xl my-3">João Victor</h1>
+            <img src="./assets/elson.png" class="rounded-full size-24" />
+            <h1 class="text-gray-500 text-3xl my-3">Elson Martins</h1>
             <div class="text-yellow-400 text-2xl">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -229,8 +183,8 @@
               <i class="fa-solid fa-star"></i>
             </div>
             <h2 class="text-2xl text-gray-500 mt-2"> - 5/5 - </h2>
-            <p class="text-gray-500 text-justify mt-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+            <p class="text-gray-500 text-center mt-4">
+              O atendimento é excelente. Pacotes de viagens incríveis.
             </p>
           </article>
           <article class="p-4 max-w-96 bg-white rounded-3xl flex flex-col text-center justify-center items-center">
@@ -244,7 +198,7 @@
               <i class="fa-solid fa-star"></i>
             </div>
             <h2 class="text-2xl text-gray-500 mt-2"> - 5/5 - </h2>
-            <p class="text-gray-500 text-justify mt-4">
+            <p class="text-gray-500 text-center  mt-4">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
             </p>
           </article>
@@ -259,13 +213,13 @@
               <i class="fa-solid fa-star text-gray-300"></i>
             </div>
             <h2 class="text-2xl text-gray-500 mt-2"> - 3/5 - </h2>
-            <p class="text-gray-500 text-justify mt-4">
+            <p class="text-gray-500 text-center mt-4">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
             </p>
           </article>
         </main>
       </section>
-      <footer class="w-full bg-zinc-800 p-10 grid grid-cols-4 gap-10">
+      <footer class="w-full bg-zinc-800 p-10 grid grid-cols-2 lg:grid-cols-4 gap-10">
         <section class="p-5">
           <h1 class="text-white border-b border-gray-300 w-full text-xl">
             Sobre nós
@@ -296,7 +250,7 @@
           </div>
         </section>
         <section class="p-5">
-          <h1 class="text-white border-b border-gray-300 w-full text-xl">
+          <h1 class="text-white border-b border-gray-300 w-full text-xl lg:text-sm xl:text-xl">
             Horário de atendimento
           </h1>
           <p class="text-zinc-500 mt-5 text-start">Segunda à Sexta: 8:00 às 12:00 – 13:30 às 20:00</p>
