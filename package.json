@@ -9,6 +9,6 @@
   "license": "ISC",
   "description": "Landing Page para excursão.",
   "devDependencies": {
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.1"
   }
 }
