@@ -8,7 +8,7 @@ Landing page responsiva para mobile, tablet e laptop. Criada como proposta para 
 <img src="./src/images/Screenshot_23.png">
 
 ## Mobile Screen
-<div style="display: grid; grid-template-columns: 1fr;">
+<div style="display: flex; flex-direction: column;">
   <img src="./src/images/Screenshot_13.png">
   <img src="./src/images/Screenshot_14.png">
 </div>
