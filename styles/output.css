@@ -3325,12 +3325,12 @@ body {
     justify-content: space-around;
   }
 
-  .max-430\:gap-5 {
-    gap: 1.25rem;
-  }
-
   .max-430\:gap-0 {
     gap: 0px;
+  }
+
+  .max-430\:gap-5 {
+    gap: 1.25rem;
   }
 
   .max-430\:rounded-3xl {
@@ -3345,28 +3345,14 @@ body {
     padding: 0.75rem;
   }
 
-  .max-430\:p-5 {
-    padding: 1.25rem;
+  .max-430\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .max-430\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
-  }
-
-  .max-430\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
-  .max-430\:px-3 {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-
-  .max-430\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
   }
 
   .max-430\:pb-10 {
@@ -3377,51 +3363,9 @@ body {
     text-align: center;
   }
 
-  .max-430\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
   .max-430\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .max-430\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .max-430\:text-\[1\.4rem\] {
-    font-size: 1.4rem;
-  }
-
-  .max-430\:text-\[1\.2rem\] {
-    font-size: 1.2rem;
-  }
-
-  .max-430\:text-\[1\.25rem\] {
-    font-size: 1.25rem;
-  }
-
-  .max-430\:text-\[1\.23rem\] {
-    font-size: 1.23rem;
-  }
-
-  .max-430\:text-\[1\.22rem\] {
-    font-size: 1.22rem;
-  }
-
-  .max-430\:text-\[1\.20rem\] {
-    font-size: 1.20rem;
-  }
-
-  .max-430\:text-\[1\.15rem\] {
-    font-size: 1.15rem;
-  }
-
-  .max-430\:text-\[1\.16rem\] {
-    font-size: 1.16rem;
   }
 
   .max-430\:text-4xl {
@@ -3429,8 +3373,14 @@ body {
     line-height: 2.5rem;
   }
 
-  .max-430\:text-\[1\.1rem\] {
-    font-size: 1.1rem;
+  .max-430\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .max-430\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 
   .max-430\:text-\[1rem\] {
@@ -3475,17 +3425,12 @@ body {
     right: 2px;
   }
 
-  .max-360\:text-\[10px\] {
-    font-size: 10px;
-  }
-
-  .max-360\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .max-360\:text-\[0\.9rem\] {
     font-size: 0.9rem;
+  }
+
+  .max-360\:text-\[10px\] {
+    font-size: 10px;
   }
 
   .max-360\:text-base {
@@ -3512,49 +3457,22 @@ body {
     line-height: 2rem;
   }
 
-  .max-344\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .max-344\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
-  .max-344\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  .max-344\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
-  .max-344\:text-\[1rem\] {
-    font-size: 1rem;
-  }
-
-  .max-344\:text-\[0\.8rem\] {
-    font-size: 0.8rem;
-  }
-
-  .max-344\:text-\[0\.5rem\] {
-    font-size: 0.5rem;
-  }
-
-  .max-344\:text-\[0\.7rem\] {
-    font-size: 0.7rem;
+  .max-344\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .max-344\:text-\[0\.6rem\] {
     font-size: 0.6rem;
   }
 
-  .max-344\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .max-344\:text-\[0\.8rem\] {
+    font-size: 0.8rem;
+  }
+
+  .max-344\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
